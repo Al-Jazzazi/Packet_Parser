@@ -29,12 +29,13 @@
 The input file should contain a **hexadecimal dump** of one captured packet. For example:
 
 ### Example Input: (I attached it in project under packet.txt)
+Generated example by chatgpt 
 ```
 4500003c1c4640004006b1e6c0a80002c0a80001
 c38a0050abcd1234dcba567801123456abcdabcd
 474554202f696e6465782e68746d6c20485454502f312e310d0a486f73743a207777772e6578616d706c652e636f6d0d0a0d0a
 ```
-Generated example by chatgpt 
+
 ---
 
 ## Usage
