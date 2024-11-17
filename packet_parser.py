@@ -2,18 +2,15 @@ import struct
 import binascii
 
 def parse_input_file(file_path):
-    """
-    Reads a text file containing captured packet data.
-    """
     with open(file_path, 'r') as f:
         data = f.read().strip()
     # Convert hex dump into binary
     return binascii.unhexlify(data.replace(" ", "").replace("\n", ""))
 
+
+# Parses the captured packet data to extract headers and payload.
 def parse_packet(packet):
-    """
-    Parses the captured packet data to extract headers and payload.
-    """
+    
     # Parse the IP header (20 bytes for IPv4)
     ip_header = packet[:20]
     iph = struct.unpack("!BBHHHBBH4s4s", ip_header)
